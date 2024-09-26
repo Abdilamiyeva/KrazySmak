@@ -60,6 +60,39 @@ function setupLinksDropdownMenu() {
     }
   });
 }
-
 setupLinksDropdownMenu();
+
+
+// Wait until the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Initialize the toggle functionality for the first and second footer sections
+  initializeToggle(
+    ".footer__actions .footer__item-title",
+    ".footer__actions .footer__items"
+  );
+  initializeToggle(
+    ".footer__actions-second .footer__item-title",
+    ".footer__actions-second .footer__right-items"
+  );
+});
+
+/**
+ * Initializes the toggle functionality for the specified title and list.
+ * @param {string} titleSelector - The CSS selector for the title element.
+ * @param {string} listSelector - The CSS selector for the list element to show/hide.
+ */
+function initializeToggle(titleSelector, listSelector) {
+  const titleElement = document.querySelector(titleSelector);
+  const listElement = document.querySelector(listSelector);
+  const iconElement = titleElement.querySelector(".footer__item-title__icon"); 
+
+  if (titleElement && listElement  && iconElement) {
+    // Add click event listener to the title to toggle the list visibility
+    titleElement.addEventListener("click", function () {
+      listElement.classList.toggle("active");
+      iconElement.classList.toggle("rotate");
+    });
+  }
+}
+
 
