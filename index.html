@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KRAZYSMAK</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <!-- HEADER START -->
@@ -568,6 +571,116 @@
     </div>
     <!-- NAVIGATION MENU END -->
     <!-- HOME START -->
+    <section class="home">
+      <div class="container">
+        <div id="splide" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide home__card">
+                <div class="home__card-information">
+                  <h3 class="home__card-title">Новинки в нашем КРЕЙЗИ МЕНЮ</h3>
+                  <p class="home__card-text card-text-first">
+                    135 роллов, 8 Муругай, Темпура, новые Нигири и Гунканы.
+                  </p>
+                  <button class="home__card-button">Выбрать роллы</button>
+                </div>
+                <div class="home__card-img">
+                  <img
+                    src="./images/home__card-img.png"
+                    loading="lazy"
+                    alt="card"
+                  />
+                </div>
+              </li>
+              <li class="splide__slide home__card">
+                <div class="home__card-information">
+                  <h3 class="home__card-title">
+                    ВСТРЕЧАЙТЕ 51 пиццу + 7 бортов!
+                  </h3>
+                  <p class="home__card-text card-text-second">
+                    Новые пиццы с несколькими видами теста/бортов/ингредиентами
+                  </p>
+                  <button class="home__card-button">Выбрать</button>
+                </div>
+                <div class="home__card-img">
+                  <img
+                    src="./images/home__card-img-2.png"
+                    loading="lazy"
+                    alt="card"
+                  />
+                </div>
+              </li>
+              <li class="splide__slide home__card">
+                <div class="home__card-information">
+                  <h3 class="home__card-title">Попробуй ВСЕ И СРАЗУ!</h3>
+                  <p class="home__card-text card-text-third">
+                    Совмещай четвертинки разных вкусов пиццы
+                  </p>
+                  <button class="home__card-button">Выбрать</button>
+                </div>
+                <div class="home__card-img">
+                  <img
+                    src="./images/home__card-img-3.png"
+                    loading="lazy"
+                    alt="card"
+                  />
+                </div>
+              </li>
+              <li class="splide__slide home__card">
+                <div class="home__card-information">
+                  <h3 class="home__card-title">Новинки в нашем КРЕЙЗИ МЕНЮ</h3>
+                  <p class="home__card-text card-text-first">
+                    135 роллов, 8 Муругай, Темпура, новые Нигири и Гунканы.
+                  </p>
+                  <button class="home__card-button">Выбрать роллы</button>
+                </div>
+                <div class="home__card-img">
+                  <img
+                    src="./images/home__card-img.png"
+                    loading="lazy"
+                    alt="card"
+                  />
+                </div>
+              </li>
+              <li class="splide__slide home__card">
+                <div class="home__card-information">
+                  <h3 class="home__card-title">
+                    ВСТРЕЧАЙТЕ 51 пиццу + 7 бортов!
+                  </h3>
+                  <p class="home__card-text card-text-second">
+                    Новые пиццы с несколькими видами теста/бортов/ингредиентами
+                  </p>
+                  <button class="home__card-button">Выбрать</button>
+                </div>
+                <div class="home__card-img">
+                  <img
+                    src="./images/home__card-img-2.png"
+                    loading="lazy"
+                    alt="card"
+                  />
+                </div>
+              </li>
+              <li class="splide__slide home__card">
+                <div class="home__card-information">
+                  <h3 class="home__card-title">Попробуй ВСЕ И СРАЗУ!</h3>
+                  <p class="home__card-text card-text-third">
+                    Совмещай четвертинки разных вкусов пиццы
+                  </p>
+                  <button class="home__card-button">Выбрать</button>
+                </div>
+                <div class="home__card-img">
+                  <img
+                    src="./images/home__card-img-3.png"
+                    loading="lazy"
+                    alt="card"
+                  />
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- HOME END -->
 
     <!-- FOOTER START -->
@@ -689,47 +802,91 @@
           </div>
         </div>
         <div class="footer__bottom-content">
-              <div class="footer__phone">
-                <a href="tel:+375333630909"  class="footer__phone__number"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M10.3075 8.01554L8.69037 7.8371C8.49707 7.81479 8.31119 7.83524 8.13276 7.89844C7.95432 7.96164 7.79447 8.06387 7.6532 8.20514L6.4822 9.36502C6.02867 9.13453 5.59745 8.8743 5.18853 8.58433C4.77961 8.28692 4.39857 7.96164 4.04541 7.60847C3.69225 7.2553 3.36698 6.87425 3.06958 6.46532C2.77962 6.05638 2.5194 5.62515 2.28891 5.1716L3.45991 4.00057C3.60118 3.8593 3.70341 3.69945 3.7666 3.521C3.8298 3.34256 3.85024 3.15668 3.82794 2.96337L3.6495 1.35738C3.60489 1.03767 3.46363 0.770005 3.22571 0.554386C2.98779 0.338767 2.70527 0.230957 2.37813 0.230957H1.2852C0.920888 0.230957 0.610481 0.359214 0.353976 0.615726C0.0974717 0.872238 -0.0196282 1.18265 0.00267657 1.54698C0.0918955 2.90761 0.411597 4.18273 0.96178 5.37235C1.5194 6.56197 2.24988 7.60661 3.15322 8.50626C4.05656 9.40591 5.10303 10.1346 6.29261 10.6922C7.4822 11.2424 8.75357 11.5621 10.1067 11.6513C10.471 11.6736 10.7814 11.5584 11.0379 11.3056C11.2945 11.0528 11.4227 10.7442 11.4227 10.3799V9.28695C11.4301 8.9598 11.3261 8.67727 11.1104 8.43934C10.8948 8.20142 10.6272 8.06015 10.3075 8.01554Z" fill="white"/>
-                </svg> +375 (33)<strong>363-09-09</strong></a>
-                <span class="footer__phone__desc">Заказ по телефону</span>
+          <div class="footer__phone">
+            <a href="tel:+375333630909" class="footer__phone__number"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M10.3075 8.01554L8.69037 7.8371C8.49707 7.81479 8.31119 7.83524 8.13276 7.89844C7.95432 7.96164 7.79447 8.06387 7.6532 8.20514L6.4822 9.36502C6.02867 9.13453 5.59745 8.8743 5.18853 8.58433C4.77961 8.28692 4.39857 7.96164 4.04541 7.60847C3.69225 7.2553 3.36698 6.87425 3.06958 6.46532C2.77962 6.05638 2.5194 5.62515 2.28891 5.1716L3.45991 4.00057C3.60118 3.8593 3.70341 3.69945 3.7666 3.521C3.8298 3.34256 3.85024 3.15668 3.82794 2.96337L3.6495 1.35738C3.60489 1.03767 3.46363 0.770005 3.22571 0.554386C2.98779 0.338767 2.70527 0.230957 2.37813 0.230957H1.2852C0.920888 0.230957 0.610481 0.359214 0.353976 0.615726C0.0974717 0.872238 -0.0196282 1.18265 0.00267657 1.54698C0.0918955 2.90761 0.411597 4.18273 0.96178 5.37235C1.5194 6.56197 2.24988 7.60661 3.15322 8.50626C4.05656 9.40591 5.10303 10.1346 6.29261 10.6922C7.4822 11.2424 8.75357 11.5621 10.1067 11.6513C10.471 11.6736 10.7814 11.5584 11.0379 11.3056C11.2945 11.0528 11.4227 10.7442 11.4227 10.3799V9.28695C11.4301 8.9598 11.3261 8.67727 11.1104 8.43934C10.8948 8.20142 10.6272 8.06015 10.3075 8.01554Z"
+                  fill="white"
+                />
+              </svg>
+              +375 (33)<strong>363-09-09</strong></a
+            >
+            <span class="footer__phone__desc">Заказ по телефону</span>
+          </div>
+          <div class="footer__phone">
+            <a href="tel:+375293630909" class="footer__phone__number"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <path
+                  d="M10.3075 8.01554L8.69037 7.8371C8.49707 7.81479 8.31119 7.83524 8.13276 7.89844C7.95432 7.96164 7.79447 8.06387 7.6532 8.20514L6.4822 9.36502C6.02867 9.13453 5.59745 8.8743 5.18853 8.58433C4.77961 8.28692 4.39857 7.96164 4.04541 7.60847C3.69225 7.2553 3.36698 6.87425 3.06958 6.46532C2.77962 6.05638 2.5194 5.62515 2.28891 5.1716L3.45991 4.00057C3.60118 3.8593 3.70341 3.69945 3.7666 3.521C3.8298 3.34256 3.85024 3.15668 3.82794 2.96337L3.6495 1.35738C3.60489 1.03767 3.46363 0.770005 3.22571 0.554386C2.98779 0.338767 2.70527 0.230957 2.37813 0.230957H1.2852C0.920888 0.230957 0.610481 0.359214 0.353976 0.615726C0.0974717 0.872238 -0.0196282 1.18265 0.00267657 1.54698C0.0918955 2.90761 0.411597 4.18273 0.96178 5.37235C1.5194 6.56197 2.24988 7.60661 3.15322 8.50626C4.05656 9.40591 5.10303 10.1346 6.29261 10.6922C7.4822 11.2424 8.75357 11.5621 10.1067 11.6513C10.471 11.6736 10.7814 11.5584 11.0379 11.3056C11.2945 11.0528 11.4227 10.7442 11.4227 10.3799V9.28695C11.4301 8.9598 11.3261 8.67727 11.1104 8.43934C10.8948 8.20142 10.6272 8.06015 10.3075 8.01554Z"
+                  fill="white"
+                />
+              </svg>
+              +375 (29)<strong>363-09-09</strong></a
+            >
+            <span class="footer__phone__desc">Заказ по телефону</span>
+          </div>
+          <div class="footer__work-time">
+            <p>Режим работы: 11:00 – 23:00</p>
+            <p>E-mail: <a class="email" href="#">info@krazysmak.by</a></p>
+          </div>
+          <div class="footer__order">
+            <div class="footer__order__action">
+              <p class="footer__order__title">Доставка в городе</p>
+              <div class="footer__order__city">
+                Барановичи
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="6"
+                  height="5"
+                  viewBox="0 0 6 5"
+                  fill="none"
+                >
+                  <path
+                    d="M0 1.82812L1.41421 0.413911L4.24264 3.24234L2.82843 4.65655L0 1.82812Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M4.24264 0.413911L5.65685 1.82812L2.82843 4.65655L1.41421 3.24234L4.24264 0.413911Z"
+                    fill="white"
+                  />
+                </svg>
               </div>
-              <div class="footer__phone">
-                <a href="tel:+375293630909" class="footer__phone__number"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                  <path d="M10.3075 8.01554L8.69037 7.8371C8.49707 7.81479 8.31119 7.83524 8.13276 7.89844C7.95432 7.96164 7.79447 8.06387 7.6532 8.20514L6.4822 9.36502C6.02867 9.13453 5.59745 8.8743 5.18853 8.58433C4.77961 8.28692 4.39857 7.96164 4.04541 7.60847C3.69225 7.2553 3.36698 6.87425 3.06958 6.46532C2.77962 6.05638 2.5194 5.62515 2.28891 5.1716L3.45991 4.00057C3.60118 3.8593 3.70341 3.69945 3.7666 3.521C3.8298 3.34256 3.85024 3.15668 3.82794 2.96337L3.6495 1.35738C3.60489 1.03767 3.46363 0.770005 3.22571 0.554386C2.98779 0.338767 2.70527 0.230957 2.37813 0.230957H1.2852C0.920888 0.230957 0.610481 0.359214 0.353976 0.615726C0.0974717 0.872238 -0.0196282 1.18265 0.00267657 1.54698C0.0918955 2.90761 0.411597 4.18273 0.96178 5.37235C1.5194 6.56197 2.24988 7.60661 3.15322 8.50626C4.05656 9.40591 5.10303 10.1346 6.29261 10.6922C7.4822 11.2424 8.75357 11.5621 10.1067 11.6513C10.471 11.6736 10.7814 11.5584 11.0379 11.3056C11.2945 11.0528 11.4227 10.7442 11.4227 10.3799V9.28695C11.4301 8.9598 11.3261 8.67727 11.1104 8.43934C10.8948 8.20142 10.6272 8.06015 10.3075 8.01554Z" fill="white"/>
-                </svg> +375 (29)<strong>363-09-09</strong></a>
-                <span class="footer__phone__desc">Заказ по телефону</span>
-              </div>
-              <div class="footer__work-time">
-                 <p>Режим работы: 11:00 – 23:00</p>
-                 <p>E-mail: <a  class="email" href="#">info@krazysmak.by</a></p>
-              </div>
-              <div class="footer__order">
-                <div class="footer__order__action">
-                  <p class="footer__order__title">Доставка в городе</p>
-                <div class="footer__order__city">
-                  Барановичи
-                  <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
-                    <path d="M0 1.82812L1.41421 0.413911L4.24264 3.24234L2.82843 4.65655L0 1.82812Z" fill="white"/>
-                    <path d="M4.24264 0.413911L5.65685 1.82812L2.82843 4.65655L1.41421 3.24234L4.24264 0.413911Z" fill="white"/>
-                  </svg>
-                </div>
-                </div>
-                <p class="footer__order-time"><span>от 30 до 90 минут</span> | Заказы принимаются даже в 23:00 </p>
-              </div>
-              <div class="footer__sponsor">
-                <span>Разработано в</span> <br>
-                <div class="footer__sponsor-img">
-                  <img src="./images/like-it-icon.svg" alt="like-it-icon" loading="lazy">
-                </div>
-              </div>
-              
+            </div>
+            <p class="footer__order-time">
+              <span>от 30 до 90 минут</span> | Заказы принимаются даже в 23:00
+            </p>
+          </div>
+          <div class="footer__sponsor">
+            <span>Разработано в</span> <br />
+            <div class="footer__sponsor-img">
+              <img
+                src="./images/like-it-icon.svg"
+                alt="like-it-icon"
+                loading="lazy"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </footer>
     <!-- FOOTER END -->
-
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
     <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
