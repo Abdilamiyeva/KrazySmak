@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   const splide = new Splide(".splide", {
-    // type: "loop",
     perPage: 3,
     perMove: 1,
     breakpoints: {
@@ -12,27 +11,65 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       },
   }).mount();
+});
 
-  const prevButton = splide.Components.Arrow.prev;
-  const nextButton = splide.Components.Arrow.next;
 
-  function updateButtons() {
-    const index = splide.index;
+// Function to initialize Splide for mobile
+function initSplide() {
+    const splideContainer = document.querySelector('#splide-slider');
 
-    if (index === 0) {
-      prevButton.classList.add("is-disabled");
-    } else {
-      prevButton.classList.remove("is-disabled");
+    if (window.innerWidth <= 768) {
+        window.splide = new Splide(splideContainer, {
+            perPage: 1,
+            pagination: true,
+        }).mount();
     }
+}
 
-    if (index === splide.length - 1) {
-      nextButton.classList.add("is-disabled"); 
-    } else {
-      nextButton.classList.remove("is-disabled"); 
+// Initialize Splide on page load and handle resize events
+window.addEventListener('load', initSplide);
+
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 768 && window.splide) {
+        window.splide.destroy(true); // Properly destroy Splide instance
+        // window.splide = null;
+    } else if (window.innerWidth <= 768 && !window.splide) {
+        initSplide();
+    }
+});
+
+// ========================================
+function handleSeeAllButtons() {
+    const seeAllButtons = document.querySelectorAll('.product-section__see-all-btn');
+  
+    seeAllButtons.forEach((button, index) => {
+      button.addEventListener('click', function () {
+        const wrapper = document.querySelectorAll('.product-section__wrapper')[index];
+  
+        if (!wrapper) {
+          console.error('Wrapper topilmadi!');
+          return;
+        }
+        const hiddenCards = wrapper.querySelectorAll('.product-section__card.hidden');
+        hiddenCards.forEach(card => {
+          card.classList.remove('hidden');
+          card.classList.add('visible');
+        });
+  
+        this.style.display = 'none';
+      });
+    });
+  }
+  
+  function checkScreenWidth() {
+    if (window.matchMedia('(max-width: 650px)').matches) {
+      handleSeeAllButtons();
     }
   }
+  checkScreenWidth();
+  
+  window.addEventListener('resize', checkScreenWidth);
+  
 
-  updateButtons();
 
-  splide.on("move", updateButtons);
-});
+
