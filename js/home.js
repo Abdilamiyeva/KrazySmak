@@ -13,30 +13,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }).mount();
 });
 
-
-// Function to initialize Splide for mobile
 function initSplide() {
     const splideContainer = document.querySelector('#splide-slider');
 
     if (window.innerWidth <= 768) {
+        document.querySelector(".splide__items").style.visibility =  "unset";
         window.splide = new Splide(splideContainer, {
-            perPage: 1,
-            pagination: true,
+            perPage: 3,
+            // pagination: true,
         }).mount();
     }
 }
-
-// Initialize Splide on page load and handle resize events
-window.addEventListener('load', initSplide);
-
-window.addEventListener('resize', function () {
-    if (window.innerWidth > 768 && window.splide) {
-        window.splide.destroy(true); // Properly destroy Splide instance
-        // window.splide = null;
-    } else if (window.innerWidth <= 768 && !window.splide) {
-        initSplide();
-    }
-});
+initSplide()
 
 // ========================================
 function handleSeeAllButtons() {
