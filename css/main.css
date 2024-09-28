@@ -1,7 +1,6 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -648,6 +647,13 @@ body {
 .footer__location-info__second:not(:last-child) {
   margin-bottom: 50px;
 }
+.footer__phone-wrapper{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  flex-wrap: wrap;
+}
 /* FOOTER END */
 
 @media (max-width: 1348px) {
@@ -873,6 +879,10 @@ body {
   .footer__location-info__second:not(:last-child) {
     margin-bottom: 24px;
   }
+  .footer__phone-wrapper{
+    gap: 20px;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -906,6 +916,61 @@ body {
     text-align: center;
     font-size: 10px;
     line-height: 19.5px;
+  }
+  .footer__phone__desc-hide{
+    display: none;
+  }
+  .phone__number-first{
+    margin-bottom: -17px;
+  }
+  .hide-icon{
+    display: none;
+  }
+  .phone__number-second{
+    margin-left: 28px;
+  }
+  .footer__phone a strong{
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .footer__phone a{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .footer__phone svg{
+    margin-right: 8px;
+  }
+  .footer__phone__desc{
+    font-size: 12px;
+    margin-top: 0px;
+  }
+  .footer__phone{
+    text-align: center;
+  }
+  .footer__work-time p, .email{
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .footer__order__title{
+    font-size: 14px;
+  }
+  .footer__order__city{
+    font-size: 14px;
+  }
+  .footer__order-time{
+    font-size: 12px;
+  }
+  .footer__sponsor span{
+    font-size: 12px;
+    line-height: 20.602px;
+  }
+  .footer__phone{
+    display: block;
+  }
+  .footer__phone-wrapper{
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
   }
 }
 @media (max-width: 375px) {
