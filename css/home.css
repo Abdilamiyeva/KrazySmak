@@ -749,6 +749,7 @@
   .catalog-card__title,
   .muragay-product__title {
     font-size: 20px;
+    line-height: normal;
   }
   #last-price {
     margin-bottom: 10px;
