@@ -25,33 +25,6 @@ function initSplide() {
 }
 initSplide();
 
-function handleSeeAllButtons() {
-  const seeAllButtons = document.querySelectorAll(
-    ".product-section__see-all-btn"
-  );
-
-  seeAllButtons.forEach((button, index) => {
-    button.addEventListener("click", function () {
-      const wrapper = document.querySelectorAll(".product-section__wrapper")[
-        index
-      ];
-      if (!wrapper) {
-        console.error("Wrapper topilmadi!");
-        return;
-      }
-      const hiddenCards = wrapper.querySelectorAll(
-        ".product-section__card.hidden"
-      );
-      hiddenCards.forEach((card) => {
-        card.classList.remove("hidden");
-        card.classList.add("visible");
-      });
-
-      this.style.display = "none";
-    });
-  });
-}
-
 function initializeMuragaySeeAllButtons() {
   const seeAllMuragayButtons = document.querySelectorAll(
     ".muragay-product__see-all"
@@ -80,6 +53,61 @@ function initializeMuragaySeeAllButtons() {
   });
 }
 
+function handleSeeAllButtons() {
+  const seeAllButtons = document.querySelectorAll(
+    ".product-section__see-all-btn"
+  );
+
+  const seeAllFoodButtons = document.querySelectorAll(".food__see-all-btn");
+
+  // Handle the product-section buttons
+  seeAllButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      const wrapper = document.querySelectorAll(".product-section__wrapper")[
+        index
+      ];
+
+      if (!wrapper) {
+        console.error("Wrapper element not found!");
+        return;
+      }
+
+      const hiddenCards = wrapper.querySelectorAll(
+        ".product-section__card.hidden"
+      );
+      hiddenCards.forEach((card) => {
+        card.classList.remove("hidden");
+        card.classList.add("visible");
+      });
+
+      this.style.display = "none";
+    });
+  });
+
+  seeAllFoodButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      const productsWrapper = document.querySelectorAll(".food__products")[
+        index
+      ];
+
+      if (!productsWrapper) {
+        console.error("Products wrapper element not found!");
+        return;
+      }
+
+      const hiddenCards = productsWrapper.querySelectorAll(
+        ".food__products__card.hidden"
+      );
+      hiddenCards.forEach((card) => {
+        card.classList.remove("hidden");
+        card.classList.add("visible");
+      });
+
+      this.style.display = "none";
+    });
+  });
+}
+
 function checkScreenWidth() {
   if (window.matchMedia("(max-width: 675px)").matches) {
     handleSeeAllButtons();
@@ -88,4 +116,3 @@ function checkScreenWidth() {
 }
 checkScreenWidth();
 window.addEventListener("resize", checkScreenWidth);
-

@@ -216,7 +216,6 @@
   border: 3px solid #5416a4;
   max-width: 294px;
   padding: 55px 15px 23px 23px;
-  /* max-height: 495px; */
 }
 #last-btn {
   width: 100%;
@@ -295,7 +294,7 @@
   background: #5416a4;
   color: white;
 }
-.product-section__see-all-btn {
+.product-section__see-all-btn, .food__see-all-btn {
   display: none;
   color: #5416a4;
   text-align: center;
@@ -303,18 +302,18 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 10.714px;
+  line-height: normal;
   border: none;
   padding: 9px 26px;
   border-radius: 40px;
   background: #e6dcf2;
   cursor: pointer;
-  height: 36px;
+  /* height: 36px; */
   transition: all 0.5s ease;
   width: 100%;
   margin-bottom: 48px;
 }
-.product-section__see-all-btn:hover {
+.product-section__see-all-btn:hover , .food__see-all-btn:hover{
   background: #5416a4;
   color: white;
 }
@@ -417,6 +416,7 @@
   max-width: 294px;
   margin-bottom: 31px;
 }
+
 .muragay-product__card-bottom {
   display: flex;
   justify-content: space-between;
@@ -464,8 +464,11 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 75px;
+  margin-bottom:60px;
   max-width: 256px;
+}
+#information-text-last{
+   margin-bottom: 30px;
 }
 .muragay-product__information-btn {
   color: #5416a4;
@@ -479,6 +482,7 @@
   border-radius: 40px;
   background: rgba(84, 22, 164, 0.15);
   padding: 13px 40px;
+  width: 100%;
 }
 .muragay-product__see-all {
   display: none;
@@ -496,12 +500,39 @@
   width: 100%;
   transition: all 0.3s ease;
   margin-top: 16px;
-  height: 36px;
 }
 .muragay-product__see-all:hover {
   background: #5416a4;
   color: white;
 }
+.muragay-product__input-wrapper input{
+  display: none;
+}
+.muragay-product__input-wrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+.muragay-product__card-surving{
+  color: #5416A4;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px; 
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  border: 2px solid #5416A4;
+  padding: 8px 28px;
+  transition: all 0.3s ease;
+}
+.muragay-product__input-wrapper input:checked + .muragay-product__card-surving{
+  background:#5416A4;
+  color: white;
+}
+
 /*  PRODUCT SECTION END */
 /* FOOD PRODUCT START  */
 .food{
@@ -552,7 +583,9 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 24px;
+  width: 100%;
 }
+
 .portion{
   display: none;
 }
@@ -568,10 +601,15 @@
   line-height: 18px; 
   padding: 8.5px 19.5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .portion:checked + .food__products__card-serving{
   background-color: #5416A4;
   color: #fff;
+}
+#radio-food{
+  padding: 8.5px 27px;
 }
 .food__products__card-bottom{
   display: flex;
@@ -626,6 +664,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px; 
+  max-width: 256px;
 }
 .food__products__card-last__price{
   color: #5416A4;
@@ -652,7 +691,7 @@
   border-radius: 40px;
   background: rgba(84, 22, 164, 0.15);
   transition: all .3s ease;
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .food__products__card-last__btn:hover {
   color: white;
@@ -713,6 +752,7 @@
   }
   .muragay-product__information {
     max-width: 100%;
+    padding: 10px;
   }
 }
 @media (max-width: 675px) {
@@ -766,7 +806,7 @@
     border-bottom: 2px solid #e6dcf2;
     margin-bottom: 16px;
   }
-  .product-section__card-last {
+  .product-section__card-last{
     border-bottom: 3px solid #5416a4;
   }
   .product-section__information {
@@ -799,8 +839,8 @@
     font-size: 18px;
   }
   .product-section__card-last {
-    height: 220px;
-    padding: 25px;
+    /* height: 220px; */
+    padding: 15px;
   }
   .product-section__card-bottom {
     gap: 10px;
@@ -815,7 +855,7 @@
     object-fit: cover !important;
   }
   #last-price {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     margin-top: 0px;
     font-size: 15px;
     white-space: nowrap;
@@ -825,14 +865,10 @@
     white-space: nowrap;
   }
   .product-section__see-all-btn,
-  .muragay-product__see-all {
+  .muragay-product__see-all ,.food__see-all-btn{
     display: block;
-  }
-  .hidden {
-    display: none;
-  }
-  .visible {
-    display: flex;
+    white-space: nowrap;
+    font-size: 14px;
   }
   .product-section__button {
     font-size: 14px;
@@ -856,10 +892,11 @@
     font-size: 16px;
     margin-bottom: 8px;
   }
-  .muragay-product__card-weight {
+  .muragay-product__card-weight,.muragay-product__input-wrapper {
     margin-top: 8px;
     margin-bottom: 16px;
   }
+
   .muragay-product__card-text {
     font-size: 12px;
     line-height: normal;
@@ -876,45 +913,93 @@
   .muragay-product__card-price {
     font-size: 16px;
   }
+  .muragay-product__information-text{
+    margin-bottom: 20px;
+  }
+  .muragay-product__information-btn{
+    padding: 9px 26px;
+    width: 100%;
+  }
   .food__products{
     width: 100%;
     display: block;
   }
   .food__products__card{
-    max-width: 100% !important;
+    max-width: 100%;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #E6DCF2;
+  }
+  .food__products__card-last{
+    border-bottom: 3px solid #5416A4;
+  }
+  .food{
+    margin-bottom: 44px;
   }
   .food__products__card-img{
     max-width: 200px;
     max-height: 200px;
   }
-  .food__products__card-info{
-    max-width: 294px;
-  }
   .food__products__card-subtitle {
     margin-bottom: 8px;
 }
 .food__products__card-serving{
-  padding: 9px 26px;
+  padding: 7px 26px;
   font-size: 12px;
+  white-space: nowrap;
 } 
 .food__products__card-btn{
   padding: 9px 26px;
+  font-size: 14px;
+  white-space: nowrap;
+  line-height: 10.714px;
 }
 .food__products__card-price{
+  font-size: 16px;
+  white-space: nowrap;
+}
+.food__products__card-last__title{
   font-size: 18px;
 }
+.food__products__card-last{
+  padding: 15px;
+  gap: 10px;
 }
-
+.food__products__card-last__text{
+  font-size: 12px;
+  line-height: normal;
+}
+.food__products__card-last__price{
+  font-size: 16px;
+  margin-top: 10px;
+}
+.food__products__card-last__btn{
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 10.714px;
+  padding: 9px 26px;
+  white-space: nowrap;
+}
+#radio-food{
+  padding: 7px 26px;
+}
+.hidden {
+  display: none;
+}
+.visible {
+  display: flex;
+}
+}
 @media (max-width: 540px) {
   .product-section__img {
     max-width: 111px;
     max-height: 111px;
   }
   .product-section__card-last {
-    min-height: 280px;
+    /* min-height: 280px; */
     padding-bottom: 15px;
     flex-direction: column;
   }
@@ -940,15 +1025,15 @@
   }
   #sauces-title {
     font-size: 18px;
+    margin-bottom: 0;
   }
   .product__sauces-card {
     padding: 10px;
-    min-height: 300px !important;
   }
   .product-drink {
     justify-content: flex-start;
     align-items: flex-start;
-    padding-bottom: 0;
+    padding-bottom: 16px;
     justify-content: center;
   }
   .drink-information {
@@ -961,9 +1046,6 @@
   .product__sauces-price {
     margin-bottom: 5px;
   }
-  .muragay-product__card {
-    justify-content: center;
-  }
   .muragay-product__card-img {
     max-width: 111px;
     max-height: 111px;
@@ -971,15 +1053,36 @@
   .muragay-product__card-weight {
     font-size: 12px;
   }
+  .muragay-product__card-surving{
+    font-size: 12px;
+  }
   #splide-slider {
     min-height: 120px;
   }
+  .food__products__card-img {
+    max-width:111px;
+    max-height: 111px;
+    float: left;
+  }
+  .food__products__card-last{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .food__products__card-last__text{
+    max-width: 100%;
+  }
+  .food__products__card-last__title{
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  
 }
 
 @media (min-width: 320px) {
   #splide-slider {
     min-height: 100px !important;
   }
+  
 }
 @media (max-width: 400px) {
   .product-section__card-price {
@@ -987,15 +1090,17 @@
     white-space: nowrap;
   }
   .product-section__card-last {
-    min-height: 300px;
+    /* min-height: 300px; */
   }
   #last-btn {
     margin-bottom: 20px !important;
   }
   .product-section__see-all-btn,
-  .muragay-product__see-all {
+  .muragay-product__see-all, .food__see-all-btn {
     font-size: 12px;
     line-height: normal;
+    width: 100%;
+  
   }
   .muragay-product__card-price {
     font-size: 13px;
@@ -1003,7 +1108,29 @@
   .muragay-product__card-weight {
     padding: 6px 26px;
   }
+  .muragay-product__card-surving{
+    padding: 6px 26px;
+  }
   .catalog-card__wrapper {
     height: 100px !important;
   }
+  .food__products__card-serving{
+    padding: 5px 20px;
+  }
+  .food__products__card-servings{
+    gap: 7px;
+  }
+  .food__products__card-price{
+    font-size: 13px;
+  }
+  .product-section__see-all-btn, .food__see-all-btn{
+    padding: 6px 26px;
+  }
+  #radio-food{
+    padding: 4px 26px;
+  }
+  .muragay-product__card-surving{
+    padding: 4px 26px;
+  }
+
 }
