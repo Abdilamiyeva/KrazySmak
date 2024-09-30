@@ -1,0 +1,48 @@
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.counter button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.counter button svg path {
+  transition: all 0.3s ease;
+}
+.counter button:hover svg path {
+  fill: white;
+}
+.counter button:hover {
+  background: #5416a4;
+}
+
+.counter__value {
+  color: #5416a4;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  width: 39px;
+  height: 39px;
+  border-radius: 40px;
+  border: 2px solid #5416a4;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
