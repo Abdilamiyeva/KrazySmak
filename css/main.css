@@ -451,6 +451,23 @@ body {
 }
 /* NAVIGATION MENU END */
 
+.food-catalog__links {
+  display: flex;
+  margin-bottom: 23px;
+}
+.food-catalog__item a {
+  color: #808080;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.food-catalog__item-first::after {
+  content: "/";
+  color: #808080;
+}
+
 /* FOOTER START */
 .footer {
   background: #2d2d2d;
@@ -884,7 +901,9 @@ body {
   .footer__phone-wrapper{
     gap: 20px;
   }
-
+  .food-catalog__item a {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 450px) {

@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./fonts/gilroy/stylesheet.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/catalog-products.css" />
   </head>
   <body>
     <!-- HEADER START -->
@@ -570,153 +570,655 @@
       </div>
     </div>
     <!-- NAVIGATION MENU END -->
-     <!-- FOOD CATALOG START -->
-    <section class="food-catalog">
+     <!-- CATALOG MEALS START -->
+    <section class="catalog-meals">
+      <div class="container">
+        <ul class="food-catalog__links">
+            <li class="food-catalog__item food-catalog__item-first"><a href="#">Главная</a></li>
+            <li class="food-catalog__item"><a href="#">Каталог товаров</a></li>
+        </ul>
+        <h1 class="catalog-meals__title">Каталог еды</h1>
+
+        <div class="catalog-meals__wrapper">
+          <a href="#" class="catalog-meals__card">
+            <img
+              src="./images/food-catalog-img2.png"
+              alt="food-catalog-img1.png"
+            />
+          </a>
+          <a href="#" class="catalog-meals__card">
+            <img
+              src="./images/food-catalog-img3.png"
+              alt="food-catalog-img1.png"
+            />
+          </a>
+          <a href="#" class="catalog-meals__card hidden">
+            <img
+              src="./images/food-catalog-img10.png"
+              alt="food-catalog-img1.png"
+            />
+          </a>
+          <a href="#" class="catalog-meals__card-last">
+            <span>Конструктор Пиццы </span>
+            <div class="catalog-meals__card-last__img">
+              <img src="./images/home__card-img-3.png" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- CATALOG MEALS END -->
+    <!-- CATALOG PRODUCTS START -->
+    <section class="catalog-products">
         <div class="container">
-            <ul class="food-catalog__links">
-                <li class="food-catalog__item food-catalog__item-first"><a href="#">Главная</a></li>
-                <li class="food-catalog__item"><a href="#">Каталог товаров</a></li>
-            </ul>
-            <h1 class="food-catalog__title">Каталог еды</h1>
-            <div class="food-catalog__cards">
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img1.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img2.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img3.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img4.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img5.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img-6.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img7.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img8.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card">
-                    <img src="./images/food-catalog-img9.png" alt="food-catalog-img1.png">
-                </a>
-                <a href="#" class="food-catalog__card-last">
-                    <span class="food-catalog__card-title">Конструктор
-                        Пиццы </span>
-                    <div class="food-catalog__card-img">
-                        <img src="./images/home__card-img-3.png" alt="home__card-img-3.png">
+            <h2 class="catalog-products__title">Пиццы </h2>
+            <button class="catalog-products__btn">Классические</button>
+            <div class="catalog-products__wrapper">
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
                     </div>
-                    <img class="hide" src="./images/food-catalog-img10.png" alt="food-catalog-img10.png">
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img1.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img4.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 9.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 12.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img2.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 8.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="catalog-products__card">
+                    <div class="catalog-products__img">
+                        <img src="./images/product-card-img3.png" alt="product-card-img">
+                    </div>
+                    <div class="catalog-products__info">
+                        <h3 class="catalog-products__card-title">Полевая</h3>
+                        <p class="catalog-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
+                        <div class="catalog-products__card-bottom">
+                            <span class="catalog-products__price">от 10.50 руб.</span>
+                            <button class="catalog-products__card-btn">
+                                Выбрать
+                            </button>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
+
     </section>
-    <!-- FOOD CATALOG END -->
-     <!-- POPULAR PRODUCTS START -->
-      <section class="popular-products">
-        <div class="container">
-          <h2 class="popular-products__title">Популярные товары </h2>
-           <div class="popular-products__cards">
-              <a href="#" class="popular-products__card products__card-line">
-                  <div class="popular-products__card-img">
-                    <img src="./images/product-card-img1.png" alt="product-card-img1.png">
-                  </div>
-                  <div class="popular-products__card-information">
-                    <h3 class="popular-products__card-title">Полевая</h3>
-                    <p class="popular-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
-                    <div class="popular-products__card-bottom">
-                        <span class="popular-products__card-price">
-                          от 10.50 руб.
-                        </span>
-                        <button class="popular-products__card-btn">
-                          Выбрать
-                        </button>
-
-                    </div>
-                  </div>
-              </a>
-              <a href="#" class="popular-products__card products__card-line">
-                <div class="popular-products__card-img">
-                  <img src="./images/roll-product-img-2.png" alt="product-card-img1.png">
-                </div>
-                <div class="popular-products__card-information">
-                  <h3 class="popular-products__card-title">Калифорния Краб</h3>
-                  <p class="popular-products__card-text text-mid">Рис, нори, сыр Творожный, огурец свежий, икра Тобико, краб Снежный </p>
-                  <div class="popular-products__card-bottom">
-                      <span class="popular-products__card-price">
-                        от 10.50 руб.
-                      </span>
-                      <button class="popular-products__card-btn">
-                        Выбрать
-                      </button>
-
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="popular-products__card ">
-                <div class="popular-products__card-img">
-                  <img src="./images/roll-product-img-22.png" alt="product-card-img1.png">
-                </div>
-                <div class="popular-products__card-information">
-                  <h3 class="popular-products__card-title">Калифорния Краб</h3>
-                  <p class="popular-products__card-text text-mid">Рис, нори, сыр Творожный, огурец свежий, икра Тобико, краб Снежный </p>
-                  <div class="popular-products__card-bottom">
-                      <span class="popular-products__card-price">
-                        от 10.50 руб.
-                      </span>
-                      <button class="popular-products__card-btn">
-                        Выбрать
-                      </button>
-
-                  </div>
-                </div>
-              </a>
-              <a href="#" class="popular-products__card hidden">
-                <div class="popular-products__card-img">
-                  <img src="./images/product-card-img1.png" alt="product-card-img1.png">
-                </div>
-                <div class="popular-products__card-information">
-                  <h3 class="popular-products__card-title">Полевая</h3>
-                  <p class="popular-products__card-text">Соус Бургерный, сыр Моцарелла, курица копчёная, перец болгарский сладкий, кукуруза консервированная... </p>
-                  <div class="popular-products__card-bottom">
-                      <span class="popular-products__card-price">
-                        от 10.50 руб.
-                      </span>
-                      <button class="popular-products__card-btn">
-                        Выбрать
-                      </button>
-
-                  </div>
-                </div>
-            </a>
-            <a href="#" class="popular-products__card hidden">
-              <div class="popular-products__card-img">
-                <img src="./images/roll-product-img-16.png" alt="product-card-img1.png">
-              </div>
-              <div class="popular-products__card-information">
-                <h3 class="popular-products__card-title">Калифорния Краб</h3>
-                <p class="popular-products__card-text text-mid">Рис, нори, сыр Творожный, огурец свежий, икра Тобико, краб Снежный </p>
-                <div class="popular-products__card-bottom">
-                    <span class="popular-products__card-price">
-                      от 10.50 руб.
-                    </span>
-                    <button class="popular-products__card-btn">
-                      Выбрать
-                    </button>
-
-                </div>
-              </div>
-            </a>
-           </div>
-        </div>
-      </section>
-     <!-- POPULAR PRODUCTS END -->
+    <!-- CATALOG PRODUCTS END -->
     <!-- FOOTER START -->
     <footer class="footer">
       <div class="container">

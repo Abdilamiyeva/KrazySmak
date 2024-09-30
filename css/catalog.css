@@ -1,0 +1,283 @@
+/* FOOD CATALOG START */
+.food-catalog {
+  margin-top: 30px;
+}
+.food-catalog__title {
+  color: #2d2d2d;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  margin-bottom: 28px;
+}
+.food-catalog__cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 242px));
+  grid-gap: 20px 20px;
+  row-gap: 30px;
+  align-items: center;
+}
+.food-catalog__card {
+  display: inline-block;
+  max-width: 242px;
+}
+.food-catalog__card img {
+  width: 100%;
+  height: 100%;
+}
+.food-catalog__card-last {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  background: linear-gradient(0deg, #7d2573 0.12%, #5a189c 99.33%);
+  width: 503px;
+  overflow: hidden;
+  max-height: 213px;
+}
+.food-catalog__card-title {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 252px;
+  margin-left: 53px;
+}
+.food-catalog__card-img {
+  max-width: 213px;
+  margin-top: 20px;
+  margin-right: -60px;
+}
+.food-catalog__card-img img {
+  width: 100%;
+  height: 100%;
+}
+.hide {
+  display: none;
+}
+/* FOOD CATALOG END */
+/*  POPULAR PRODUCTS START */
+.popular-products{
+    margin-top: 58px;
+    margin-bottom: 97px;
+}
+.popular-products__title{
+    color: #2D2D2D;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+    margin-bottom: 29px;
+}
+.popular-products__cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.popular-products__card{
+    max-width: 294px;
+    padding-bottom: 22px;
+}
+.popular-products__card-img{
+    max-width: 294px;
+}
+.popular-products__card-img img {
+    width: 100%;
+    height: 100%;
+}
+.popular-products__card-title{
+    color: #2D2D2D;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 15px;
+}
+.popular-products__card-text{
+    color: #000;
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 15px;
+    max-width: 100%;
+    margin-bottom: 21px;
+}
+.text-mid{
+    margin-bottom:40px;
+}
+.popular-products__card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.popular-products__card-price{
+    color:#5416A4;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px; 
+}
+.popular-products__card-btn{
+    color: #5416A4;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    border: none;
+    border-radius: 40px;
+    background: rgba(84, 22, 164, 0.15);
+    padding: 13px 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.popular-products__card-btn:hover{
+    background:#5416A4;
+    color: white;
+}
+
+/*  POPULAR PRODUCTS END  */
+
+
+@media (max-width: 1693px) {
+  .food-catalog__card-title {
+    display: none;
+  }
+  .food-catalog__card-last {
+    width: 243px;
+  }
+}
+@media (max-width: 800px) {
+  .food-catalog__cards {
+    justify-content: center;
+  }
+  .food-catalog__card {
+    max-width: 100%;
+  }
+  .food-catalog__card-last {
+    width: 100%;
+  }
+}
+@media (max-width:660px) {
+    .popular-products__cards{
+        display: block;
+    }
+    .popular-products__card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+    }
+    .popular-products__card-text{
+        max-width: 240px;
+    }
+    .popular-products__card-img{
+        max-width: 200px;
+    }
+    .hidden{
+        display: none;
+    }
+    .popular-products__card-btn{
+        font-size: 14px;
+        padding: 9px 26px;
+    }
+    .products__card-line{
+        border-bottom: 1px solid #E6DCF2;
+    }
+    .popular-products__card{
+        padding-bottom: 16px;
+    }
+}
+@media (max-width: 560px) {
+  .food-catalog__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    row-gap: 10px;
+  }
+  .food-catalog__card {
+    max-width: 175px;
+  }
+  .food-catalog__card-last {
+    max-width: 175px;
+  }
+  .food-catalog__card-img {
+    display: none;
+  }
+  .hide {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .food-catalog__title {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .food-catalog {
+    margin-top: 24px;
+  }
+  .popular-products__card-title{
+    font-size: 16px;
+    line-height: normal;
+    margin-top: 16px;
+}
+.popular-products__card-price{
+    font-size: 16px;
+    white-space: nowrap;
+}
+.popular-products__card-text{
+    margin-top: 8px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+.popular-products__card-img{
+    max-width: 111px;
+}
+.popular-products__title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.popular-products{
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+}
+
+@media (max-width: 414px) {
+  .food-catalog__cards {
+    justify-content: space-between;
+  }
+  .food-catalog__card {
+    max-width: 140px;
+  }
+  .food-catalog__card-last {
+    max-width: 140px;
+  }
+  .popular-products__card{
+    gap: 15px;
+  }
+  .popular-products__card-btn{
+    padding: 7px 26px;
+    line-height: normal;
+    font-size: 13px;
+  }
+  .popular-products__card-price{
+    font-size: 13px;
+  }
+  .popular-products__card-text{
+    font-size: 11px;
+    line-height: normal;
+  }
+}
