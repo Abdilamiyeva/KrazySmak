@@ -43,7 +43,7 @@ function initializeMuragaySeeAllButtons() {
       const hiddenElements = wrapper.querySelectorAll(
         ".muragay-product__information.hidden"
       );
-
+      
       hiddenElements.forEach((element) => {
         element.classList.remove("hidden");
       });
@@ -57,56 +57,56 @@ function handleSeeAllButtons() {
   const seeAllButtons = document.querySelectorAll(
     ".product-section__see-all-btn"
   );
-
   const seeAllFoodButtons = document.querySelectorAll(".food__see-all-btn");
 
-  // Handle the product-section buttons
   seeAllButtons.forEach((button, index) => {
     button.addEventListener("click", function () {
-      const wrapper = document.querySelectorAll(".product-section__wrapper")[
-        index
-      ];
+      const wrapper = document.querySelectorAll(".product-section__wrapper")[index];
 
       if (!wrapper) {
         console.error("Wrapper element not found!");
         return;
       }
 
-      const hiddenCards = wrapper.querySelectorAll(
-        ".product-section__card.hidden"
-      );
+      const hiddenCards = wrapper.querySelectorAll(".product-section__card.hidden");
+      const thirdCard = wrapper.querySelectorAll(".product-section__card.visible")[2];
+      thirdCard.classList.add("third");
       hiddenCards.forEach((card) => {
         card.classList.remove("hidden");
         card.classList.add("visible");
       });
+      thirdCard.classList.remove("third");
 
+      
       this.style.display = "none";
     });
   });
 
   seeAllFoodButtons.forEach((button, index) => {
     button.addEventListener("click", function () {
-      const productsWrapper = document.querySelectorAll(".food__products")[
-        index
-      ];
+      const productsWrapper = document.querySelectorAll(".food__products")[index];
 
       if (!productsWrapper) {
         console.error("Products wrapper element not found!");
         return;
       }
 
-      const hiddenCards = productsWrapper.querySelectorAll(
-        ".food__products__card.hidden"
-      );
+      const hiddenCards = productsWrapper.querySelectorAll(".food__products__card.hidden");
+      const thirdFoodCard = productsWrapper.querySelectorAll(".food__products__card.visible")[2];
+
+      thirdFoodCard.classList.add("third");
       hiddenCards.forEach((card) => {
         card.classList.remove("hidden");
         card.classList.add("visible");
       });
+      thirdFoodCard.classList.remove("third");
 
       this.style.display = "none";
     });
   });
+
 }
+
 
 function checkScreenWidth() {
   if (window.matchMedia("(max-width: 675px)").matches) {
