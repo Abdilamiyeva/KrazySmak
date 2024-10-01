@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
       1300: {
         perPage: 2,
       },
-      800: {
+      768: {
         perPage: 1,
       },
     },

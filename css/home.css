@@ -2,14 +2,13 @@
   margin-top: 49px;
 }
 .splide__slide {
-  min-height: 260px;
   margin-right: 20px;
 }
 .is-disabled {
   display: none;
 }
-.splide__arrow:disabled {
-  display: none !important;
+.splide__arrow:disabled svg {
+    fill: #F2F2F2;
 }
 .splide__arrow {
   background: none;
@@ -39,7 +38,8 @@
   justify-content: space-between;
   align-items: center;
   max-width: 520px;
-  padding-left:38px;
+  padding: 29px 0 21px 38px;
+  position: relative;
 }
 .splide__pagination {
   display: none;
@@ -63,6 +63,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  padding-bottom: 30px;
 }
 .card-text-first {
   max-width: 263px;
@@ -81,6 +82,8 @@
   line-height: 18px;
   background: transparent;
   padding: 9px 30px;
+  position: absolute;
+  bottom: 24px;
 
 }
 .home__card-img {
@@ -704,9 +707,6 @@
   .splide__arrow--prev{
     left: -30px;
   }
-  .home .container {
-    padding: 0 40px;
-  }
   .muragay-product__wrapper {
     justify-content: space-around;
   }
@@ -726,9 +726,8 @@
     max-height: 150px;
   }
 }
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .splide__slide {
-    min-height: 260px;
     margin-right: 10px;
   }
   .splide__pagination__page {
@@ -737,10 +736,61 @@
   .splide__pagination__page.is-active {
     background: #5416a4;
   }
-  
+  .home__card{
+    max-width: 462px;
+    padding: 28px 0 21px 34px;
+  }
+  .home__card-button{
+    padding: 8.5px 27.5px;
+    font-size: 12px;
+    line-height: normal;
+  }
+  .home__card-text{
+    font-size: 13px;
+    line-height: normal;
+  }
+  .home__card-title{
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: normal;
+  }
+  .home__card-img{
+    max-width: 196px;
+    max-height: 196px;
+  }
+  .home {
+    margin-top: 24px;
+  }
 }
-@media (max-width: 1000px) {
-  .splide__arrow {
+@media (max-width: 1012px) {
+  .splide__list{
+    justify-content: space-between;
+  }
+  .home__card-title{
+    font-size: 18px;
+    margin-bottom: 13px;
+  }
+  .card-text-second{
+    max-width: 200px;
+  }
+  .card-text-first{
+    max-width: 220px;
+  }
+  .home__card-text{
+    font-size: 12px;
+    line-height: normal;
+    padding-bottom: 24px;
+  }
+  .home__card{
+    max-width: 350px;
+  }
+  .home__card-img{
+    max-width: 150px;
+  }
+  .home__card-button{
+    padding: 8px 26px;
+  }
+  /* .splide__arrow {
     display: none;
   }
   .splide__pagination {
@@ -749,10 +799,7 @@
   }
   .home {
     margin-top: 24px;
-  }
-  .home .container {
-    padding: 0 24px;
-  }
+  } */
 }
 @media (max-width: 925px) {
   .muragay-product__wrapper {
@@ -1035,7 +1082,7 @@
   }
   .product-section__button {
     font-size: 16px;
-    padding: 11px 30px;
+    padding: 9px 30px;
   }
   .product-section__title,
   .catalog-card__title,
@@ -1116,6 +1163,7 @@
   }
   #last-btn {
     margin-bottom: 20px !important;
+    padding: 7px 26px;
   }
   
   .muragay-product__card-price {
@@ -1144,7 +1192,7 @@
     font-size: 12px;
     line-height: normal;
     width: 100%;
-    padding: 9px 20px;
+    padding: 7px 20px;
   
   }
   #radio-food{
@@ -1153,5 +1201,7 @@
   .muragay-product__card-surving{
     padding: 4px 26px;
   }
-
+  .product-section__card-btn, .food__products__card-btn , .muragay-product__card-btn{
+    padding: 7px 26px;
+  }
 }
