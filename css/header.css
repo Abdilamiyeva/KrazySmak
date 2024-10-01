@@ -433,7 +433,6 @@
   /* NAVIGATION MENU END */
   @media (max-width: 1348px) {
     .header__top {
-      flex-wrap: wrap;
       gap: 20px;
       align-items: flex-start;
     }
@@ -462,6 +461,56 @@
       font-size: 14px;
     }
   }
+  @media (max-width:1024px) {
+    .header__telephone-text {
+      display: none;
+    }
+    .telephone-number-two {
+      margin-left: 22px;
+    }
+    .header__telephone-number .hide {
+      display: none;
+    }
+    .header__delivery__wrapper{
+      flex-direction: column;
+      align-items:flex-start;
+      gap: 0;
+    }
+    .header__delivery__time{
+      display: none;
+    }
+    .header__delivery__title{
+      font-size: 12px;
+      line-height: normal;
+    }
+    .header__delivery__city span{
+      font-size: 12px;
+      line-height: normal;
+    }
+    .header__telephone-number strong{
+      font-size: 14px;
+      line-height: normal;
+    }
+    .header__telephone-number{
+      font-size: 12px;
+      line-height: normal;
+    }
+    .header__btn-basket, .header__btn-signin{
+      padding: 8px 20px;
+    }
+    .header__telephone-number svg{
+      margin-right: 8px;
+    }
+    .header__top{
+      align-items: center;
+    }
+    .header__logo{
+      max-width: 162px;
+    }
+    .header__telephone-second {
+      margin-top: -5px;
+    }
+  }
   @media (max-width: 800px) {
     .header__wrapper {
       display: flex;
@@ -479,15 +528,7 @@
     .header__delivery {
       display: none;
     }
-    .header__telephone-text {
-      display: none;
-    }
-    .telephone-number-two {
-      margin-left: 25px;
-    }
-    .header__telephone-number .hide {
-      display: none;
-    }
+   
     .header__navbar {
       margin-top: 23px;
       overflow-y: hidden;
@@ -572,9 +613,6 @@
     .header__telephone-number strong {
       font-size: 14px;
     }
-    .header__telephone-second {
-      margin-top: -10px;
-    }
     .header__telephone-number {
       font-size: 12px;
     }
@@ -589,5 +627,8 @@
     }
     .header__top {
       gap: 15px;
+    }
+    .header__bars{
+      width: 15px;
     }
   }

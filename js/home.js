@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const splide = new Splide(".splide", {
     perPage: 3,
     perMove: 1,
+    type: 'loop',
     gap:'20px',
     breakpoints: {
       1300: {
@@ -14,32 +15,42 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   }).mount();
 });
+// ============================================================================
+let splide;
 
 function initSplide() {
   const splideContainer = document.querySelector("#splide-slider");
-  if (window.innerWidth <= 1024) {
-    document.querySelector(".splide__items").style.visibility = "unset";
-    window.splide = new Splide(splideContainer, {
-      perPage: 6,
-      gap:'16px',
-    }).mount();
-  }
-  if (window.innerWidth <= 950) {
-    document.querySelector(".splide__items").style.visibility = "unset";
-    window.splide = new Splide(splideContainer, {
-      perPage: 5,
-      gap:'16px',
-    }).mount();
-  }
-  if (window.innerWidth <= 768) {
-    document.querySelector(".splide__items").style.visibility = "unset";
-    window.splide = new Splide(splideContainer, {
-      perPage: 3,
-    }).mount();
-  }
-}
-initSplide();
 
+  if (!splideContainer) {
+    return;
+  }
+
+  if (splide) {
+    splide.destroy();
+  }
+
+  let perPage = 6;
+
+  if (window.innerWidth <= 768) {
+    perPage = 3;
+  } else if (window.innerWidth <= 1024) {
+    perPage = 6;
+  }
+
+  splide = new Splide(splideContainer, {
+    perPage: perPage,
+    gap: '16px',
+    type: 'loop',
+  }).mount();
+
+  document.querySelector(".splide__items").style.visibility = "unset";
+}
+
+window.addEventListener("resize", initSplide);
+document.addEventListener("DOMContentLoaded", initSplide);
+
+initSplide();
+// ==============================================================================
 function initializeMuragaySeeAllButtons() {
   const seeAllMuragayButtons = document.querySelectorAll(
     ".muragay-product__see-all"
@@ -120,7 +131,6 @@ function handleSeeAllButtons() {
 
 }
 
-
 function checkScreenWidth() {
   if (window.matchMedia("(max-width: 675px)").matches) {
     handleSeeAllButtons();
@@ -129,3 +139,5 @@ function checkScreenWidth() {
 }
 checkScreenWidth();
 window.addEventListener("resize", checkScreenWidth);
+
+// ===============================================================================

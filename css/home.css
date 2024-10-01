@@ -770,28 +770,22 @@
 }
 @media (max-width: 925px) {
   .home__card-title {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 10px;
   }
   .card-text-first {
-    max-width: 220px;
+    max-width: 250px;
   }
   .home__card-text {
     font-size: 12px;
     line-height: normal;
     padding-bottom: 24px;
   }
-  .home__card {
-    width: calc(50% - 20px) !important;
-  }
   .home__card-img {
     max-width: 150px;
   }
   .home__card-button {
     padding: 8px 26px;
-  }
-  .splide__arrow--next {
-    right: -10px;
   }
   .home__card {
     padding: 24px 0 20px 32px;
