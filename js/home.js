@@ -2,9 +2,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const splide = new Splide(".splide", {
     perPage: 3,
     perMove: 1,
+    gap:'20px',
     breakpoints: {
       1300: {
         perPage: 2,
+        gap:'20px',
       },
       768: {
         perPage: 1,
@@ -15,7 +17,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function initSplide() {
   const splideContainer = document.querySelector("#splide-slider");
-
+  if (window.innerWidth <= 1024) {
+    document.querySelector(".splide__items").style.visibility = "unset";
+    window.splide = new Splide(splideContainer, {
+      perPage: 6,
+      gap:'16px',
+    }).mount();
+  }
+  if (window.innerWidth <= 950) {
+    document.querySelector(".splide__items").style.visibility = "unset";
+    window.splide = new Splide(splideContainer, {
+      perPage: 5,
+      gap:'16px',
+    }).mount();
+  }
   if (window.innerWidth <= 768) {
     document.querySelector(".splide__items").style.visibility = "unset";
     window.splide = new Splide(splideContainer, {
@@ -43,11 +58,9 @@ function initializeMuragaySeeAllButtons() {
       const hiddenElements = wrapper.querySelectorAll(
         ".muragay-product__information.hidden"
       );
-      
       hiddenElements.forEach((element) => {
         element.classList.remove("hidden");
       });
-
       button.style.display = "none";
     });
   });
