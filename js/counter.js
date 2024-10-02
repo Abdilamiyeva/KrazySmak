@@ -1,5 +1,5 @@
 const buttonsPlus = document.querySelectorAll(".counter__inc");
-const buttonsMinus = document.querySelectorAll(".counter__dec"); // Assuming the class is indeed "counter__dec"
+const buttonsMinus = document.querySelectorAll(".counter__dec"); 
 const counts = document.querySelectorAll(".counter__value");
 
 buttonsPlus.forEach((button, index) => {

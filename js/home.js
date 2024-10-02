@@ -44,6 +44,8 @@ function initSplide() {
   splide = new Splide(splideContainer, {
     perPage: perPage,
     gap: '16px',
+    type: 'loop',
+
   }).mount();
 
   document.querySelector(".splide__items").style.visibility = "unset";
@@ -59,13 +61,13 @@ function initializeMuragaySeeAllButtons() {
   );
 
   seeAllMuragayButtons.forEach((button) => {
-    button.addEventListener("click", function () {
+    button.addEventListener("click", function() {
       const wrapper = button
         .closest(".muragay-product")
         .querySelector(".muragay-product__wrapper");
 
       if (!wrapper) {
-        console.error("Wrapper element topilmadi, iltimos kodni tekshiring!");
+        console.error("Wrapper not found!");
         return;
       }
       const hiddenElements = wrapper.querySelectorAll(
