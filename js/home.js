@@ -31,7 +31,11 @@ function initSplide() {
 
   let perPage = 6;
 
-  if (window.innerWidth <= 768) {
+  if(window.innerWidth >= 1024){
+    splide.destroy()
+
+  }
+  else if (window.innerWidth <= 768) {
     perPage = 3;
   } else if (window.innerWidth <= 1024) {
     perPage = 6;
@@ -40,7 +44,6 @@ function initSplide() {
   splide = new Splide(splideContainer, {
     perPage: perPage,
     gap: '16px',
-    type: 'loop',
   }).mount();
 
   document.querySelector(".splide__items").style.visibility = "unset";
@@ -49,7 +52,6 @@ function initSplide() {
 window.addEventListener("resize", initSplide);
 document.addEventListener("DOMContentLoaded", initSplide);
 
-initSplide();
 // ==============================================================================
 function initializeMuragaySeeAllButtons() {
   const seeAllMuragayButtons = document.querySelectorAll(
