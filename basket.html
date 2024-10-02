@@ -583,25 +583,569 @@
       <!-- BASKET SECTION START  -->
       <section class="basket">
         <div class="container">
+          <ul class="food-catalog__links">
+            <li class="food-catalog__item food-catalog__item-first">
+              <a href="#">Главная</a>
+            </li>
+            <li class="food-catalog__item"><a href="#">Каталог товаров</a></li>
+          </ul>
           <div class="basket__title-wrapper">
             <h1 class="basket__title">Моя корзина</h1>
-            <button class="basket__all-delete">Очистить корзину <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path d="M10 2L9 3H4V5H5V20C5 20.5222 5.19133 21.0546 5.56836 21.4316C5.94539 21.8087 6.47778 22 7 22H17C17.5222 22 18.0546 21.8087 18.4316 21.4316C18.8087 21.0546 19 20.5222 19 20V5H20V3H15L14 2H10ZM7 5H17V20H7V5ZM9 7V18H11V7H9ZM13 7V18H15V7H13Z" fill="#808080"/>
-            </svg></button>
+            <button class="basket__all-delete">
+              Очистить корзину
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M10 2L9 3H4V5H5V20C5 20.5222 5.19133 21.0546 5.56836 21.4316C5.94539 21.8087 6.47778 22 7 22H17C17.5222 22 18.0546 21.8087 18.4316 21.4316C18.8087 21.0546 19 20.5222 19 20V5H20V3H15L14 2H10ZM7 5H17V20H7V5ZM9 7V18H11V7H9ZM13 7V18H15V7H13Z"
+                  fill="#808080"
+                />
+              </svg>
+            </button>
           </div>
           <div class="basket__wrapper">
-             <div class="basket__cards">
-                <div class="basket__card">
+            <div class="basket__cards">
+              <div class="basket__card">
+                <div class="basket__card-left">
                   <div class="basket__card-img">
-                     <img src="./images/product-card-img5.png" alt="">
+                    <img src="./images/product-card-img5.png" alt="" />
                   </div>
-                  .basket__card
+                  <div class="counter">
+                    <button class="counter__dec">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="3"
+                        viewBox="0 0 8 3"
+                        fill="none"
+                      >
+                        <path
+                          d="M0 2.93592V0.919922H7.2V2.93592H0Z"
+                          fill="#5416A4"
+                        />
+                      </svg>
+                    </button>
+                    <input type="number" value="1" class="counter__value" />
+                    <button class="counter__inc">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="12"
+                        viewBox="0 0 11 12"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.53961 11.2958V6.85583H0.0996094V4.83983H4.53961V0.423828H6.55561V4.83983H10.9836V6.85583H6.55561V11.2958H4.53961Z"
+                          fill="#5416A4"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-             </div>
+                <div class="basket__card-information">
+                  <div class="basket__card-information-left">
+                    <h3 class="basket__card-title">Полевая</h3>
+                    <div class="pizza-options">
+                      <span class="pizza-option pizza-option__size--25cm"
+                        >25 см</span
+                      >
+                      <span class="pizza-option pizza-option__dough--thick"
+                        >Толстое тесто</span
+                      >
+                      <span class="pizza-option pizza-option__edge--no-border"
+                        >Без борта</span
+                      >
+                    </div>
+                    <p class="basket__card-option-text">
+                      25 см, Толстое тесто, Без борта
+                    </p>
+                    <div class="basket__card-properties">
+                      <span class="basket__card-property">Мидии 1.70 руб.</span>
+                      <span class="basket__card-property second"
+                        >Опята маринованные 1.70 руб.</span
+                      >
+                      <br />
+                      <span class="basket__card-property second"
+                        >Сыр Творожный 1.70 руб.</span
+                      >
+                    </div>
+                    <p class="basket__card-properties-second">
+                      <span>Мидии 1.70 руб.</span>
+                      <span> Опята маринованные 1.70 руб.</span>
+                      <span>Сыр Творожный 1.70 руб.</span>
+                    </p>
+                  </div>
+                  <div class="basket__card-information-right">
+                    <div class="basket__card-texts">
+                      <p class="basket__card-text first">Цена за 1 шт</p>
+                      <p class="basket__card-text">Итого</p>
+                    </div>
+                    <div class="basket__card-bottom">
+                      <p class="basket__card-price first">9.50 руб.</p>
+                      <div class="counter">
+                        <button class="counter__dec">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="8"
+                            height="3"
+                            viewBox="0 0 8 3"
+                            fill="none"
+                          >
+                            <path
+                              d="M0 2.93592V0.919922H7.2V2.93592H0Z"
+                              fill="#5416A4"
+                            />
+                          </svg>
+                        </button>
+                        <input type="number" value="1" class="counter__value" />
+                        <button class="counter__inc">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11"
+                            height="12"
+                            viewBox="0 0 11 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M4.53961 11.2958V6.85583H0.0996094V4.83983H4.53961V0.423828H6.55561V4.83983H10.9836V6.85583H6.55561V11.2958H4.53961Z"
+                              fill="#5416A4"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="basket__card-price">
+                        <span class="basket__card-text text-end">Итого</span>
+                        9.50 руб.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="basket__card-delete-btn">
+                  Удалить
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 2L9 3H4V5H5V20C5 20.5222 5.19133 21.0546 5.56836 21.4316C5.94539 21.8087 6.47778 22 7 22H17C17.5222 22 18.0546 21.8087 18.4316 21.4316C18.8087 21.0546 19 20.5222 19 20V5H20V3H15L14 2H10ZM7 5H17V20H7V5ZM9 7V18H11V7H9ZM13 7V18H15V7H13Z"
+                      fill="#5416A4"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <div class="basket__card">
+                <div class="basket__card-left">
+                  <div class="basket__card-img">
+                    <img src="./images/product-card-img5.png" alt="" />
+                  </div>
+                  <div class="counter">
+                    <button class="counter__dec">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="8"
+                        height="3"
+                        viewBox="0 0 8 3"
+                        fill="none"
+                      >
+                        <path
+                          d="M0 2.93592V0.919922H7.2V2.93592H0Z"
+                          fill="#5416A4"
+                        />
+                      </svg>
+                    </button>
+                    <input type="number" value="1" class="counter__value" />
+                    <button class="counter__inc">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="11"
+                        height="12"
+                        viewBox="0 0 11 12"
+                        fill="none"
+                      >
+                        <path
+                          d="M4.53961 11.2958V6.85583H0.0996094V4.83983H4.53961V0.423828H6.55561V4.83983H10.9836V6.85583H6.55561V11.2958H4.53961Z"
+                          fill="#5416A4"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="basket__card-information">
+                  <div class="basket__card-information-left">
+                    <h3 class="basket__card-title">Полевая</h3>
+                    <div class="pizza-options">
+                      <span class="pizza-option pizza-option__size--25cm"
+                        >25 см</span
+                      >
+                      <span class="pizza-option pizza-option__dough--thick"
+                        >Толстое тесто</span
+                      >
+                      <span class="pizza-option pizza-option__edge--no-border"
+                        >Без борта</span
+                      >
+                    </div>
+                    <p class="basket__card-option-text">
+                      25 см, Толстое тесто, Без борта
+                    </p>
+                    <div class="basket__card-properties">
+                      <span class="basket__card-property">Мидии 1.70 руб.</span>
+                      <span class="basket__card-property second"
+                        >Опята маринованные 1.70 руб.</span
+                      >
+                      <br />
+                      <span class="basket__card-property second"
+                        >Сыр Творожный 1.70 руб.</span
+                      >
+                    </div>
+                    <p class="basket__card-properties-second">
+                      <span>Мидии 1.70 руб.</span>
+                      <span> Опята маринованные 1.70 руб.</span>
+                      <span>Сыр Творожный 1.70 руб.</span>
+                    </p>
+                  </div>
+                  <div class="basket__card-information-right">
+                    <div class="basket__card-texts">
+                      <p class="basket__card-text first">Цена за 1 шт</p>
+                      <p class="basket__card-text">Итого</p>
+                    </div>
+                    <div class="basket__card-bottom">
+                      <p class="basket__card-price first">9.50 руб.</p>
+                      <div class="counter">
+                        <button class="counter__dec">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="8"
+                            height="3"
+                            viewBox="0 0 8 3"
+                            fill="none"
+                          >
+                            <path
+                              d="M0 2.93592V0.919922H7.2V2.93592H0Z"
+                              fill="#5416A4"
+                            />
+                          </svg>
+                        </button>
+                        <input type="number" value="1" class="counter__value" />
+                        <button class="counter__inc">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11"
+                            height="12"
+                            viewBox="0 0 11 12"
+                            fill="none"
+                          >
+                            <path
+                              d="M4.53961 11.2958V6.85583H0.0996094V4.83983H4.53961V0.423828H6.55561V4.83983H10.9836V6.85583H6.55561V11.2958H4.53961Z"
+                              fill="#5416A4"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <p class="basket__card-price">
+                        <span class="basket__card-text text-end">Итого</span>
+                        9.50 руб.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <button class="basket__card-delete-btn">
+                  Удалить
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M10 2L9 3H4V5H5V20C5 20.5222 5.19133 21.0546 5.56836 21.4316C5.94539 21.8087 6.47778 22 7 22H17C17.5222 22 18.0546 21.8087 18.4316 21.4316C18.8087 21.0546 19 20.5222 19 20V5H20V3H15L14 2H10ZM7 5H17V20H7V5ZM9 7V18H11V7H9ZM13 7V18H15V7H13Z"
+                      fill="#5416A4"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="basket__informations">
+              <div class="basket__information">
+                <h3 class="basket__information-title">Стоимость заказа</h3>
+                <p class="basket__information-text">
+                  Сроки доставки уточнит менеджер при обработке заказа
+                </p>
+                <div class="basket__information-prices">
+                  <span class="basket__information-price">Товары (2)</span>
+                  <span class="basket__information-price">19 BYN</span>
+                </div>
+                <div class="basket__information-prices">
+                  <span class="basket__information-price">Скидка</span>
+                  <span class="basket__information-price">-0 BYN</span>
+                </div>
+                <div class="basket__information-nowprice">
+                  <span class="basket__information-nowprice-text"
+                    >Сейчас к оплате</span
+                  >
+                  <span>19 BYN</span>
+                </div>
+                <div class="basket__information-bottom">
+                  <span>Общий вес: </span>
+                  <span>375 г.</span>
+                </div>
+              </div>
+              <div class="basket__information-order">
+                <button class="basket__information-order__btn">
+                  Оформить заказ
+                </button>
+                <p class="basket__information-order-text">
+                  <span>Оформляя заказ, Вы соглашаетесь с </span
+                  >договором-оферты и политикой обработки и защиты персональных
+                  данных.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- BASKET SECTION END  -->
+      <!-- ORDER START -->
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title">Оформление заказа</h2>
+          <div class="order__text">
+            БЕСПЛАТНАЯ доставка по городу – при сумме заказа от 20 byn
+          </div>
+          <div class="order__card-wrapper">
+            <div class="order__card">
+              <div class="order__card-inner">
+                <img src="./images/order-img-1.svg" alt="order-img.svg" />
+                <h2 class="order__card-title">Доставка</h2>
+              </div>
+              <div class="order__options">
+                <input
+                  class="order__delivery-inp"
+                  type="radio"
+                  name="delivery"
+                  id="courier"
+                  value="courier"
+                  checked
+                />
+                <label class="order__delivery-label" for="courier"
+                  >Курьером / 3.50 руб.</label
+                >
+                <input
+                  class="order__delivery-inp"
+                  type="radio"
+                  name="delivery"
+                  id="pickup"
+                  value="pickup"
+                />
+                <label class="order__delivery-label" for="pickup"
+                  >Самовывоз / 0 руб.</label
+                >
+              </div>
+            </div>
+            <div class="order__card">
+              <div class="order__card-inner">
+                <img src="./images/order-img-2.svg" alt="order-img.svg" />
+                <h2 class="order__card-title">Оплата</h2>
+              </div>
+              <div class="order__options">
+                <input
+                  class="order__delivery-inp"
+                  type="radio"
+                  name="payment"
+                  id="card"
+                  value="card"
+                  checked
+                />
+                <label class="order__delivery-label" id="card" for="card"
+                  >Банковской картой курьеру</label
+                >
+                <input
+                  class="order__delivery-inp"
+                  type="radio"
+                  name="payment"
+                  id="cash"
+                  value="cash"
+                />
+                <label class="order__delivery-label" id="cash" for="cash"
+                  >Наличными курьеру</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ORDER END -->
+      <!-- FORM SECTION START  -->
+      <section class="form">
+        <h2 class="form__title">Покупатель</h2>
+        <form class="form__wrapper" action="#">
+          <div class="form__input-wrapper">
+            <label for="name" class="form__label">Имя <span>*</span></label>
+            <input
+              id="name"
+              type="text"
+              class="form__input"
+              placeholder="Введите ваше имя "
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__input-wrapper">
+            <label for="phone-number" class="form__label"
+              >Телефон <span>*</span></label
+            >
+            <input
+              id="phone-number"
+              type="tel"
+              class="form__input"
+              placeholder="+ 375 (__)___-__-__"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__input-wrapper">
+            <label for="email" class="form__label">E-mail <span>*</span></label>
+            <input
+              id="email"
+              type="email"
+              class="form__input"
+              placeholder="Введите адрес вашей электронной почты "
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__input-wrapper">
+            <label for="city" class="form__label">Город <span>*</span></label>
+            <input
+              id="city"
+              type="text"
+              class="form__input"
+              value="Барановичи"
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__input-wrapper">
+            <label for="street" class="form__label">Улица<span>*</span></label>
+            <input
+              id="street"
+              type="text"
+              class="form__input"
+              placeholder="Введите адрес вашей электронной почты "
+              autocomplete="off"
+            />
+          </div>
+          <div class="form__address-wrapper">
+            <div class="form__address">
+              <label
+                class="form__address-label"
+                for="house"
+                id="form__address-label"
+                >Дом <span>*</span></label
+              >
+              <input
+                id="house"
+                type="number"
+                class="form__address-input"
+                value="10"
+              />
+            </div>
+            <div class="form__address">
+              <label class="form__address-label" for="appartment"
+                >Квартира <span>*</span></label
+              >
+              <input
+                id="appartment"
+                type="number"
+                class="form__address-input"
+                value="10"
+              />
+            </div>
+            <div class="form__address">
+              <label class="form__address-label" for="frame">Корпус</label>
+              <input
+                id="frame"
+                type="number"
+                class="form__address-input"
+                value="10"
+              />
+            </div>
+            <div class="form__address">
+              <label class="form__address-label" for="entrance">Подьезд </label>
+              <input
+                id="entrance"
+                type="number"
+                class="form__address-input"
+                value="10"
+              />
+            </div>
+            <div class="form__address">
+              <label class="form__address-label" for="floor">Этаж</label>
+              <input
+                id="floor"
+                type="number"
+                class="form__address-input"
+                value="10"
+              />
+            </div>
+            <div class="form__address">
+              <label class="form__address-label" for="kod"> Код подьезда</label>
+              <input
+                id="kod"
+                type="number"
+                class="form__address-input"
+                value="10"
+              />
+            </div>
+          </div>
+          <div class="form__comments">
+             <h3 class="form__comments-title">Комментарии к заказу</h3>
+             <input type="text" class="form__comments-btn" placeholder="Введите адрес вашей электронной почты">
+          </div>
+        </form>
+      </section>
+       <div class="container">
+        <div id="basket__info" class="basket__informations">
+          <div class="basket__information">
+            <h3 class="basket__information-title">Стоимость заказа</h3>
+            <p class="basket__information-text">
+              Сроки доставки уточнит менеджер при обработке заказа
+            </p>
+            <div class="basket__information-prices">
+              <span class="basket__information-price">Товары (2)</span>
+              <span class="basket__information-price">19 BYN</span>
+            </div>
+            <div class="basket__information-prices">
+              <span class="basket__information-price">Скидка</span>
+              <span class="basket__information-price">-0 BYN</span>
+            </div>
+            <div class="basket__information-nowprice">
+              <span class="basket__information-nowprice-text"
+                >Сейчас к оплате</span
+              >
+              <span>19 BYN</span>
+            </div>
+            <div class="basket__information-bottom">
+              <span>Общий вес: </span>
+              <span>375 г.</span>
+            </div>
+          </div>
+          <div class="basket__information-order">
+            <button class="basket__information-order__btn">
+              Оформить заказ
+            </button>
+            <p class="basket__information-order-text">
+              <span>Оформляя заказ, Вы соглашаетесь с </span
+              >договором-оферты и политикой обработки и защиты персональных
+              данных.
+            </p>
+          </div>
+        </div>
+       </div>
+      <!-- FORM SECTION END -->
     </main>
     <!-- FOOTER START -->
     <footer class="footer">
