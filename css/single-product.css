@@ -200,6 +200,7 @@
   margin-top: 15px;
   cursor: pointer;
   max-width: 266px;
+  white-space: nowrap;
 }
 .single-product__add-btn svg {
   margin-left: 10px;
@@ -256,6 +257,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   max-width: 247px;
+  white-space: nowrap;
 }
 .single-product__basket-btn:hover {
   background: #0b5818;
