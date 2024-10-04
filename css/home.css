@@ -758,7 +758,10 @@
   .home {
     margin-top: 24px;
   }
-  .catalog-card__last {
+  #splide__slider-last{
+    display: none;
+  }
+  #splide-slider-slide11{
     display: none;
   }
   #last-two{
