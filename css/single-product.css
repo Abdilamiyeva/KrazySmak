@@ -169,7 +169,6 @@
   z-index: 1000;
   padding: 6px 20px;
 }
-
 .single-product__select.open + .single-product__options-container {
   display: block;
 }
@@ -568,5 +567,5 @@
   .single-product__cards-title, .single-product__title{
     font-size: 18px;
   }
-
+ 
 }

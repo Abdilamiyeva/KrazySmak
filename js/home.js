@@ -45,6 +45,7 @@ function initSplide() {
     perPage: perPage,
     gap: '16px',
     type: 'loop',
+    perMove: 1,
 
   }).mount();
 
