@@ -2,6 +2,7 @@ function openModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.classList.add('show');
+    document.body.classList.add('modal-open');
   } else {
     console.error(`Modal with id "${modalId}" not found.`);
   }
@@ -11,6 +12,7 @@ function closeModal(modalId) {
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.classList.remove('show');
+    document.body.classList.remove('modal-open');
   } else {
     console.error(`Modal with id "${modalId}" not found.`);
   }
@@ -21,6 +23,7 @@ document.querySelectorAll('.modal .close-btn').forEach(closeBtn => {
     const modal = closeBtn.closest('.modal');
     if (modal) {
       modal.classList.remove('show');
+      document.body.classList.remove('modal-open');
     }
   });
 });

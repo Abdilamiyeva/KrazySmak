@@ -74,6 +74,7 @@
   display: flex;
   justify-content: space-between;
   width: 86%;
+  gap: 15px;
 }
 .basket__card-information-left {
 }
@@ -465,11 +466,11 @@
   font-weight: 400;
   line-height: 18px; 
 }
-#form__address-label{
-  margin-right: 60px;
-}
 .form__address-label span{
   color: #ea0000;
+}
+.form__address:nth-child(1) > label {
+  margin-right: 60px;
 }
 .form__address-input {
   border-radius: 40px;
@@ -824,7 +825,7 @@ border: 2px solid #5416A4;
    .form__address-wrapper{
     gap: 16px;
    }
-   #form__address-label{
+   .form__address:nth-child(1) > label{
     margin-right: 0;
    }
    .basket__information-title{

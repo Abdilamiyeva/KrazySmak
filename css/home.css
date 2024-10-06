@@ -4,9 +4,7 @@
 .splide__list {
   justify-content: space-between;
 }
-.splide__slide {
-  /* margin-right: 20px; */
-}
+
 .is-disabled {
   display: none;
 }
@@ -1150,6 +1148,17 @@
     margin-bottom: 0;
   }
 }
+@media (max-width:430px) {
+  .product-section__see-all-btn,
+  .muragay-product__see-all,
+  .food__see-all-btn {
+    display: block;
+    white-space:inherit;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  
+}
 
 @media (min-width: 320px) {
   #splide-slider {
@@ -1160,9 +1169,6 @@
   .product-section__card-price {
     font-size: 13px;
     white-space: nowrap;
-  }
-  .product-section__card-last {
-    /* min-height: 300px; */
   }
   #last-btn {
     margin-bottom: 20px !important;
@@ -1194,9 +1200,9 @@
   .muragay-product__see-all,
   .food__see-all-btn {
     font-size: 12px;
-    line-height: normal;
+    line-height: 13px;
     width: 100%;
-    padding: 7px 20px;
+    padding: 9px 20px;
   }
   #radio-food {
     padding: 4px 26px;

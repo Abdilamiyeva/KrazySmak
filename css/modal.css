@@ -1,66 +1,73 @@
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
-.modal.show {
-  display: flex;
-}
-.modal-content {
-  background-color: #fff;
-  padding: 28px 36px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 87px 0px rgba(0, 0, 0, 0.35);
-  max-width: 1002px;
-  position: relative;
-}
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: white;
-  padding: 5px 10px;
-  cursor: pointer;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  transition: all 0.3s ease;
-  justify-content: center;
-}
-.close-btn svg {
-  transition: all 0.3s ease;
-}
-.close-btn:hover {
-  background: #5416a4;
-}
-.close-btn:hover svg path {
-  fill: white;
-}
-/* PIZZA MODAL START */
-.pizza__wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: 21px;
-  justify-content: space-between;
-}
-.pizza__image {
-  max-width: 350px;
-  max-height: 350px;
-}
-.pizza__image img {
-  width: 100%;
-  height: 100%;
-}
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal.show {
+    display: flex;
+  }
+  .modal-content {
+    background-color: #fff;
+    padding: 28px 36px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 87px 0px rgba(0, 0, 0, 0.35);
+    max-width: 1002px;
+    position: relative;
+    overflow-y:auto;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    justify-content: center;
+  }
+  .close-btn svg {
+    transition: all 0.3s ease;
+  }
+  .close-btn:hover {
+    background: #5416a4;
+  }
+  .close-btn:hover svg path {
+    fill: white;
+  }
+  body.modal-open {
+    position: fixed;
+    width: 100%;
+    overflow: hidden; 
+  }
+  /* PIZZA MODAL START */
+  .pizza__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 21px;
+    justify-content: space-between;
+  }
+
+  .pizza__image {
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .pizza__image img {
+    width: 100%;
+    height: 100%;
+  }
 .pizza__information {
 }
 .pizza__title {
@@ -722,6 +729,9 @@ line-height: 22px;
   max-width: 1002px;
 }
 @media (max-width: 1024px) {
+  .modal{
+    align-items: flex-end;
+  }
   .pizza__add-btn-content {
     flex-wrap: wrap;
   }
@@ -746,24 +756,32 @@ line-height: 22px;
     grid-template-columns: repeat(2, 1fr);
   }
   .modal {
-    height: 100vh;
     overflow-y: auto;
   }
   .ingredient__label p .title {
     white-space: inherit;
   }
   #ingredients-modal .modal-content {
-    margin-top: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal {
-    bottom: 0;
+    height: 100vh;
   }
   .modal-content {
     border-radius: 15px 15px 0px 0px;
-    margin-top: 300px;
+  }
+
+}
+@media (max-width:900px) {
+  #choose-fruit .modal-content{
+    border-radius: 0;
+    height: 100vh;
+  }
+  
+}
+@media (max-width: 768px) {
+  .modal-content {
+    border-radius: 0px;
+  }
+  #pizza-modal .modal-content {
+    height: 100vh;
   }
   .pizza__wrapper {
     flex-direction: column;
@@ -834,13 +852,11 @@ line-height: 22px;
     line-height: 11px;
     margin-top: 20px;
   }
-  #ingredients-modal .modal-content {
-    margin-top: 380px;
+  #crab-modal .modal-content {
+    height: 100vh;
   }
-  #crab-modal {
-    bottom: 0;
-    left: 0;
-    right: 0;
+  #rolls-modal .modal-content{
+    height: 100vh;
   }
   .crap-modal__content {
     display: block;
@@ -852,8 +868,8 @@ line-height: 22px;
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .crap-modal__options {
-    margin-bottom: 200px;
+  .crap-modal__options-first {
+    padding-bottom: 200px;
   }
   .crap-modal__image {
     margin: 0 auto;
@@ -876,8 +892,19 @@ line-height: 22px;
     margin-bottom: 60px;
   }
   #crap-bottom {
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
+  }
+  #fried-rolls-modal .modal-content{
+    height: 100vh;
+  }
+  .crap__bottom-content{
+    position:static;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #sweet-rolls__modal .modal-content{
+    height: 100vh;
   }
   .sweet-rolls__modal-content{
     display: block;
@@ -932,7 +959,10 @@ line-height: 22px;
   margin-bottom: 60px;
 }
 #choose-ingredients .modal-content{
-    padding-bottom: 550px;
+    height: 100vh;
+}
+#crazyto__modal .modal-content{
+  height: 100vh;
 }
 }
 @media (max-width: 560px) {
@@ -981,7 +1011,7 @@ line-height: 22px;
     line-height: normal;
   }
   .modal-content {
-    margin-top: 400px;
+    /* margin-top: 400px; */
   }
   .ingredient__label img {
     width: 25px;
@@ -1006,7 +1036,7 @@ line-height: 22px;
     height: 8.5px;
   }
   #ingredients-modal .modal-content {
-    margin-top: 530px;
+    /* margin-top: 530px; */
   }
   .crap-modal__title {
     font-size: 16px;
@@ -1035,6 +1065,7 @@ line-height: 22px;
   .crap__basket-btn {
     padding: 11px 25px;
     font-size: 14px;
+    white-space: nowrap;
     line-height: 11px;
   }
   .crap__bottom-content .counter__value {
@@ -1085,7 +1116,7 @@ line-height: 22px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 410px) {
   .pizza__size-label {
     padding: 7px 11px;
   }
@@ -1112,18 +1143,12 @@ line-height: 22px;
     max-width: 250px;
     max-width: 250px;
   }
-  .modal-content {
-    margin-top: 400px;
-  }
   .close-btn svg {
     width: 19px;
     height: 19px;
   }
   .ingredient__label p {
     max-width: 120px;
-  }
-  #ingredients-modal .modal-content {
-    margin-top: 460px;
   }
   .ingredient__label img {
     width: 25px;
@@ -1148,6 +1173,9 @@ line-height: 22px;
     width: 35px;
     height: 35px;
     border-radius: none;
+  }
+  .choose-fruit__title{
+    margin-top: -10px;
   }
   .crap__basket-btn {
     font-size: 12px;
@@ -1210,7 +1238,5 @@ line-height: 22px;
 #meat-serving__wrap{
   margin-top: 14px;
 }
-#choose-ingredients .modal-content{
-  padding-bottom: 580px;
-}
+
 }
