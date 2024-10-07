@@ -1,7 +1,4 @@
-.basket {
-  padding-top: 42px;
-}
-.basket__title-wrapper {
+.main-title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -401,7 +398,7 @@
   margin-bottom: 29px;
 }
 .form{
-  margin-bottom: 100px;
+  padding-bottom: 66px;
 }
 .form__wrapper {
 }
@@ -546,7 +543,7 @@ border: 2px solid #5416A4;
   .basket__card {
     width: 1000px;
   }
-  .basket__title-wrapper {
+  .main-title-wrapper {
     max-width: 1000px;
   }
 }
@@ -558,7 +555,7 @@ border: 2px solid #5416A4;
   .basket__card {
     width: 100%;
   }
-  .basket__title-wrapper {
+  .main-title-wrapper {
     max-width: 100%;
   }
   .basket__wrapper {
@@ -615,8 +612,7 @@ border: 2px solid #5416A4;
   }
   #basket__info{
     display: block;
-    margin-bottom: 48px;
-    margin-top: 48px;
+    padding-bottom: 14px;
    }
    #basket__info .basket__information{
     display: block;
@@ -627,7 +623,7 @@ border: 2px solid #5416A4;
     max-width: 100%;
    }
    .form{
-    margin-bottom: 0px;
+    padding-bottom: 0px;
    }
 }
 
@@ -715,7 +711,7 @@ border: 2px solid #5416A4;
     font-size: 20px;
     line-height: normal;
   }
-  .basket__title-wrapper {
+  .main-title-wrapper {
     margin-bottom: 16px;
   }
   .basket__all-delete {

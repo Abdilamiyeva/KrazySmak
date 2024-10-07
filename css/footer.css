@@ -1,5 +1,6 @@
   /* FOOTER START */
   .footer {
+    margin-top: 34px;
     background: #2d2d2d;
     padding-top: 35px;
   }
@@ -201,8 +202,9 @@
     gap: 120px;
     flex-wrap: wrap;
   }
-  /* FOOTER END */
 
+  /* FOOTER END */
+  
   @media (max-width: 1348px) {
     .footer__wrapper {
       gap: 100px;
@@ -224,6 +226,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+    #footer{
+      margin-top: 48px;
     }
   }
   @media (max-width: 800px) {

@@ -2,15 +2,22 @@
 .header {
     padding-top: 17px;
   }
-  .header__top {
+  .header__top{
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
+    gap: 10px;
+  }
+  .header__top-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
   }
   .header__logo {
     display: inline-block;
     max-width: 199px;
     max-height: 49px;
+    margin-right: 45px;
   }
   .header__logo img {
     width: 100%;
@@ -190,7 +197,7 @@
   }
   /* NAVBAR START */
   .header__navbar {
-    margin-top: 23px;
+    margin-top: 20px;
     overflow-y: hidden;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -198,10 +205,8 @@
   
   .header__navbar__items {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 32px;
-    max-width: 1120px;
+    gap: 40px;
   }
   .header__navbar__link {
     color: #2d2d2d;
@@ -456,6 +461,13 @@
     .header__navbar__link {
       font-size: 14px;
     }
+    .header__top-inner {
+      display: flex;
+      gap: 10px;
+    }
+    .header__logo {
+      margin-right: 30px;
+    }
   }
   @media (max-width:1170px) {
     .header__telephones {
@@ -480,7 +492,10 @@
   }
   @media (max-width:1024px) {
  
-    
+    .header__top-inner {
+      display: flex;
+      gap: 15px;
+    }
     .header__delivery__wrapper{
       flex-direction: column;
       align-items:flex-start;
@@ -510,9 +525,6 @@
     }
     .header__telephone-number svg{
       margin-right: 8px;
-    }
-    .header__top{
-      align-items: center;
     }
     .header__logo{
       max-width: 162px;
@@ -630,15 +642,23 @@
     
   }
   @media (max-width:450px) {
+    .header__top-inner{
+      align-items: center;
+    }
     .navigation-menu {
       display: block;
     }
-    
+    .header__logo {
+      margin-right: 20px;
+    }
   }
   @media (max-width: 375px) {
     .header__logo {
       max-width: 100px;
       max-height: 30px;
+    }
+    .header__logo {
+      margin-right: 0px;
     }
     .header__top {
       gap: 15px;

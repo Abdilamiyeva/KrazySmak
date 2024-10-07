@@ -1,15 +1,12 @@
-.catalog-meals{
-    margin-top: 42px;
-}
 .catalog-meals__wrapper{
     display: flex;
     align-items: center;
     gap: 20.5px;
+    margin-top: 35px;
 }
 .catalog-meals__card{
     display: inline-block;
     max-width: 160px;
-
 }
 .catalog-meals__card img {
     width: 100%;
@@ -49,20 +46,11 @@
     width: 100%;
     height: 100%;
 }
-.catalog-meals__title{
-    color: #2D2D2D;
-    font-family: Manrope;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 18px; 
-    margin-bottom: 28px;
-}
 
 /* CATALOG PRODUCTS START */
 .catalog-products{
     margin-top: 30px;
-    margin-bottom: 132px;
+    padding-bottom: 98px;
 }
 .catalog-products__title{
     color:  #2D2D2D;
@@ -97,10 +85,10 @@
     margin-top: 29px;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
-    grid-gap: 20px 20px;
-    row-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 294px));
     align-items: center;
+    grid-gap: 12px 12px;
+    row-gap: 25px;
 }
 .catalog-products__card{
     display: inline-block;
@@ -181,10 +169,7 @@
     .catalog-meals__card{
         max-width: 111px;
     }
-    .catalog-meals__title{
-        font-size: 20px;
-        margin-bottom: 16px;
-    }
+  
     .catalog-products__wrapper{
         display: block;
         margin-top: 16px;
@@ -221,10 +206,13 @@
         font-size: 20px;
         line-height: normal;
     }
+    .catalog-meals__wrapper{
+        margin-top: 16px;
+    }
 }
 @media (max-width:460px) {
     .catalog-products{
-        margin-bottom: 32px;
+        padding-bottom: 32px;
     }
     .catalog-products__card{
         gap: 16px;
@@ -271,9 +259,6 @@
     }
     .catalog-meals__wrapper{
         gap: 10px;
-    }
-    .catalog-meals__title{
-        font-size: 18px;
     }
     .catalog-products__card-btn{
         font-size: 12px;

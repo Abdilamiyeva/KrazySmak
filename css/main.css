@@ -14,7 +14,7 @@ body {
   overflow-x: hidden;
 }
 .container {
-  max-width: 1650px;
+  max-width: 1552px;
   margin: 0 auto;
 }
 .main{
@@ -23,7 +23,8 @@ body {
 .food-catalog__links {
   display: flex;
   align-items: center;
-  margin-bottom: 23px;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }
 .food-catalog__item a {
   color: #808080;
@@ -40,15 +41,32 @@ body {
 }
 .food-catalog__item a:hover{
   color: #5416a4;
-  font-weight: 600;
 }
+.section-wrapper{
+  margin-top: 46px;
+}
+.catalog-meals__title{
+  color: #2D2D2D;
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px; 
+}
+
 @media (max-width:768px) {
   .main{
     padding: 0 20px;
   }
-  
+  .catalog-meals__title{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
 }
 @media (max-width: 375px) {
+  .catalog-meals__title{
+    font-size: 18px;
+  }
   .main{
     padding: 0 12px;
   }

@@ -1,22 +1,13 @@
 /* FOOD CATALOG START */
 .food-catalog {
-  margin-top: 42px;
-}
-.food-catalog__title {
-  color: #2d2d2d;
-  font-family: Manrope;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 18px;
-  margin-bottom: 28px;
+  margin-top: 39px;
 }
 .food-catalog__cards {
+  margin-top: 32px;
   display: grid;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fill, minmax(175px, 242px));
   grid-gap: 20px 20px;
-  row-gap: 30px;
   align-items: center;
 }
 .food-catalog__card {
@@ -62,8 +53,8 @@
 /* FOOD CATALOG END */
 /*  POPULAR PRODUCTS START */
 .popular-products{
-    margin-top: 58px;
-    margin-bottom: 97px;
+    margin-top: 65px;
+    padding-bottom: 63px;
 }
 .popular-products__title{
     color: #2D2D2D;
@@ -206,6 +197,7 @@
     flex-wrap: wrap;
     gap: 16px;
     row-gap: 10px;
+    margin-top: 16px;
   }
   .food-catalog__card {
     max-width: 175px;
@@ -221,10 +213,10 @@
     width: 100%;
     height: 100%;
   }
-  .food-catalog__title {
+  /* .food-catalog__title {
     font-size: 20px;
     margin-bottom: 16px;
-  }
+  } */
   .food-catalog {
     margin-top: 24px;
   }
@@ -251,7 +243,7 @@
 }
 .popular-products{
     margin-top: 48px;
-    margin-bottom: 48px;
+    padding-bottom: 14px;
 }
 }
 
